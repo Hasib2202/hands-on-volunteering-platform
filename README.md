@@ -63,7 +63,8 @@ The database schema includes tables for users, events, volunteer registrations, 
 1. Follow the setup instructions to install dependencies and configure environment variables.
 2. Run the project with:
    ```bash
-   npm run dev   ```
+   npm run dev
+   ```
 
 ### In Production
 To deploy the project in production, you can use services like **Heroku**, **AWS**, or **DigitalOcean**. Follow the specific platform’s documentation for deployment.
