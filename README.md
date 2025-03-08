@@ -26,30 +26,7 @@ The Hands-On Volunteering Platform is a web-based application that enables indiv
 ## Database Schema
 The database schema includes tables for users, events, volunteer registrations, and event categories. Below is a simplified version of the database schema:
 
-```
-users
-| id   | name     | email         | password_hash | role      |
-|------|----------|---------------|---------------|-----------|
-| 1    | John Doe | johndoe@mail.com | [hashed_password] | volunteer |
-| 2    | Admin    | admin@mail.com | [hashed_password] | admin    |
 
-events
-| id   | name          | description        | event_date  | location |
-|------|---------------|--------------------|-------------|----------|
-| 1    | Community Cleanup | A local community cleanup event | 2025-05-15 | Central Park |
-
-volunteers
-| id   | user_id | event_id | hours_volunteered |
-|------|---------|----------|-------------------|
-| 1    | 1       | 1        | 5                 |
-| 2    | 1       | 2        | 3                 |
-
-event_categories
-| id   | name          |
-|------|---------------|
-| 1    | Environment   |
-| 2    | Education     |
-```
 
 ## Setup Instructions
 
