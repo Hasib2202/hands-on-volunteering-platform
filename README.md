@@ -52,7 +52,7 @@ The database schema includes tables for users, events, volunteer registrations, 
 4. **Run the server**:
    After setting up the environment variables, you can run the server locally with:
    ```bash
-   npm start
+   npx nodemon server.js
    ```
 
 
@@ -63,8 +63,7 @@ The database schema includes tables for users, events, volunteer registrations, 
 1. Follow the setup instructions to install dependencies and configure environment variables.
 2. Run the project with:
    ```bash
-   npm start
-   ```
+   npm run dev   ```
 
 ### In Production
 To deploy the project in production, you can use services like **Heroku**, **AWS**, or **DigitalOcean**. Follow the specific platform’s documentation for deployment.
