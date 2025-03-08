@@ -18,7 +18,7 @@ router.get("/", async (req, res) => {
           attributes: ["id", "title"], // Include only the id and title of the post
         },
       ],
-      order: [["createdAt", "ASC"]], // Order comments by creation date
+      order: [["createdAt", "ASC"]], 
     });
 
     res.json(comments);
