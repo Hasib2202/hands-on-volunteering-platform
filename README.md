@@ -1,4 +1,4 @@
-Here's a sample README file based on the submission guidelines you provided:
+
 
 ```markdown
 # Hands-On Volunteering Platform
