@@ -55,35 +55,7 @@ The database schema includes tables for users, events, volunteer registrations, 
    npm start
    ```
 
-## API Documentation
 
-### Authentication API
-- **POST /api/auth/register**: Register a new user
-  - **Request**: `{"name": "John Doe", "email": "johndoe@mail.com", "password": "password"}`
-  - **Response**: `{ "message": "User registered successfully" }`
-  
-- **POST /api/auth/login**: Log in a user and obtain a JWT token
-  - **Request**: `{"email": "johndoe@mail.com", "password": "password"}`
-  - **Response**: `{ "token": "your_jwt_token" }`
-
-### Event Management API
-- **GET /api/events**: Get a list of all events
-  - **Response**: `[ { "id": 1, "name": "Community Cleanup", "event_date": "2025-05-15", "location": "Central Park" }, ... ]`
-
-- **POST /api/events**: Create a new event (Admin only)
-  - **Request**: `{"name": "Food Drive", "description": "A charity food drive event", "event_date": "2025-06-10", "location": "Community Center"}`
-  - **Response**: `{ "message": "Event created successfully" }`
-
-- **GET /api/events/{id}**: Get details of a specific event
-  - **Response**: `{ "id": 1, "name": "Community Cleanup", "description": "A local community cleanup event", "event_date": "2025-05-15", "location": "Central Park" }`
-
-### Volunteer API
-- **POST /api/volunteers**: Register a user for an event
-  - **Request**: `{"event_id": 1, "user_id": 1}`
-  - **Response**: `{ "message": "User successfully registered for the event" }`
-
-- **GET /api/volunteers/{user_id}**: Get all events a user is registered for
-  - **Response**: `[ { "event_id": 1, "event_name": "Community Cleanup", "hours_volunteered": 5 }, ... ]`
 
 ## Running the Project
 
