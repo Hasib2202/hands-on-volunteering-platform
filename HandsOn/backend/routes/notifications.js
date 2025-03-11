@@ -13,7 +13,7 @@ router.get("/", auth, async (req, res) => {
   }
 });
 
-// Mark notification as read
+// [ Mark notification as read ]
 router.put("/:id/read", auth, async (req, res) => {
   try {
     const notification = await Notification.findByPk(req.params.id);
