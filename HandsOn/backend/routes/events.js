@@ -17,28 +17,7 @@ router.post("/", auth, async (req, res) => {
   }
 });
 
-// // List Events with Filters
-// router.get("/", async (req, res) => {
-//   try {
-//     const { category, location, upcoming } = req.query;
-//     const whereClause = {};
 
-//     if (category) {
-//       whereClause.category = category;
-//     }
-//     if (location) {
-//       whereClause.location = location;
-//     }
-//     if (upcoming === "true") {
-//       whereClause.date = { [require("sequelize").Op.gte]: new Date() };
-//     }
-
-//     const events = await Event.findAll({ where: whereClause });
-//     res.json(events);
-//   } catch (err) {
-//     res.status(500).json({ message: "Error fetching events", error: err.message });
-//   }
-// });
 
 // List Events with Filters
 router.get("/", async (req, res) => {
