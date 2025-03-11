@@ -36,7 +36,7 @@ router.put("/", auth, async (req, res) => {
 // GET volunteer history & contributions (stub endpoint)
 router.get("/history", auth, async (req, res) => {
   try {
-    // Stub: In a full implementation, fetch volunteer history & contributions from related models.
+   
     res.json({ message: "Volunteer history and contributions not implemented yet." });
   } catch (err) {
     res.status(500).json({ message: "Error retrieving history", error: err.message });
