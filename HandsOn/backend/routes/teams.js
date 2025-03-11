@@ -90,36 +90,7 @@ router.post("/:id/invite", auth, async (req, res) => {
   }
 });
 
-// Accept or Reject a Team Invitation
-// router.post("/invitations/:id/respond", auth, async (req, res) => {
-//   const { status } = req.body;
 
-//   if (!status || !["accepted", "rejected"].includes(status)) {
-//     return res.status(400).json({ message: "Invalid status" });
-//   }
-
-//   try {
-//     const invitation = await TeamInvitation.findByPk(req.params.id);
-
-//     if (!invitation) {
-//       return res.status(404).json({ message: "Invitation not found" });
-//     }
-
-//     // Update the invitation status
-//     invitation.status = status;
-//     await invitation.save();
-
-//     // If accepted, add the user to the team
-//     if (status === "accepted") {
-//       const team = await Team.findByPk(invitation.teamId);
-//       await team.addMembers(invitation.userId);
-//     }
-
-//     res.json({ message: "Invitation response recorded", invitation });
-//   } catch (err) {
-//     res.status(500).json({ message: "Error responding to invitation", error: err.message });
-//   }
-// });
 
 // Fetch Pending Invitations for a User
 router.get("/invitations", auth, async (req, res) => {
