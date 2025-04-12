@@ -89,6 +89,5 @@ You can copy this template and replace the placeholders with specific details re
 ```
 Project pictures 
 ```
-# Home page
-![image alt](![Image](https://github.com/user-attachments/assets/0ecc4571-a977-4b08-8f9d-f0eb7ec0b6eb))
+ ![Image Alt](https://github.com/Hasib2202/hands-on-volunteering-platform/blob/98e7e5d18e8cf9e9fa933d8ccffafaf25c7d1662/Screenshot_11-3-2025_19412_localhost.jpeg)
 
