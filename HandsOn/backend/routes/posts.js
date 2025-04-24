@@ -18,7 +18,7 @@ router.post("/", auth, async (req, res) => {
       category,
       cause,
       urgency,
-      userId: req.user.id, // Link to the author
+      userId: req.user.id,
     });
 
     res.status(201).json({ message: "Help request created successfully", post });
